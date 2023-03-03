@@ -12,13 +12,15 @@ function Header() {
         id="header-links"
       >
         <Link
+          to={'/'}
           id='welcome-link'
           className='header-link'
           onClick={() => setPage('home')}
         >
-          Welcome
+          Home
         </Link>
         <Link
+          to={'/projects'}
           id='projects link'
           className='header-link'
           onClick={() => setPage('projects')}
@@ -26,6 +28,7 @@ function Header() {
           Projects
         </Link>
         <Link
+          // to={}
           id='contact-link'
           className='header-link'
           onClick={() => setPage('contact')}

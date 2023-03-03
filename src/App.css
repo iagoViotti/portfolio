@@ -1,13 +1,20 @@
+
 body {
   padding: auto;
   margin: auto;
   background-color: bisque;
+  background-image: url('./img/gradient-background-test-3\ \(1\).jpg');
+  background-size: cover;
 }
+
 main {
   margin: 5ch;
-  border: 1px solid grey;
-  height: 88vmin; /* ????? */
+  border: 1px solid #282a35;
+  height: 90vmin;
+  min-height: 595px;
+  /* ????? */
 }
+
 /****** HEADER SHIT ******/
 #header {
   display: flex;
@@ -18,6 +25,7 @@ main {
   top: 0;
   width: 100%;
 }
+
 #header-links {
   display: flex;
   flex-direction: column;
@@ -26,26 +34,49 @@ main {
   padding-right: 20px;
   /* background-color: grey; */
 }
-Header > h1 {
-  font-size: 120px;
+
+Header>h1 {
+  color: #282a35;
+  font-size: 140px;
   margin: 0;
   padding: 0 20px 0 10px;
-  /* background-color: white; */
 }
+
 .header-link {
+  color: #282a35;
   display: flex;
   justify-content: flex-end;
   font-size: 20px;
   cursor: pointer;
-  text-decoration: none
+  text-decoration: none;
+  /* line-height: 30px; */
+  border-radius: 0 50px 50px 0;
+  padding: 0.5ch;
+  padding-right: 2ch;
+  padding-left: 4ch;
+  background-image: linear-gradient(to left, white 20%, transparent);
 }
 
 /****** HOME SHIT ******/
 #infoWindow {
-  height: 300px;
-  width: 600px;
-  overflow-y: scroll;
-  position: fixed;
-  bottom: 10rem;
-  margin-left: 4em;
+  height: 50%;
+  width: 45%;
+  overflow-y: auto;
+  position: relative;
+  top: 18%;
+  margin-left: 4%;
+  -webkit-mask-image: linear-gradient(transparent, black 10%, transparent 200%);
+  mask-image: linear-gradient(transparent, black 10%, transparent 200%);
+}
+
+/****** SCROLLBAR SHIT ******/
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.8);
 }
