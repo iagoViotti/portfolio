@@ -3,11 +3,49 @@ body {
   margin: auto;
   background-color: bisque;
 }
-
+main {
+  margin: 5ch;
+  border: 1px solid grey;
+  height: 88vmin; /* ????? */
+}
+/****** HEADER SHIT ******/
 #header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   margin: auto;
-  background-color: red;
   position: sticky;
   top: 0;
   width: 100%;
+}
+#header-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100px;
+  padding-right: 20px;
+  /* background-color: grey; */
+}
+Header > h1 {
+  font-size: 120px;
+  margin: 0;
+  padding: 0 20px 0 10px;
+  /* background-color: white; */
+}
+.header-link {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none
+}
+
+/****** HOME SHIT ******/
+#infoWindow {
+  height: 300px;
+  width: 600px;
+  overflow-y: scroll;
+  position: fixed;
+  bottom: 10rem;
+  margin-left: 4em;
 }

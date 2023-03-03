@@ -1,16 +1,28 @@
-import React from 'react';
-import Header from '../components/Header'
+import React, { useContext } from 'react';
+import pageContext from '../Context/pageContext';
 import '../App.css';
 
-class Home extends React.Component {
-  render() {
-    return (
-      <>
-      <Header />
+function Home() {
+  const { page, setPage } = useContext(pageContext);
+  return (
+    <div>
+      <h1>{page}</h1>
       <h1>Home</h1>
-      </>
-    );
-  }
-}
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+    </div>
+  );
+};
 
 export default Home;
