@@ -58,13 +58,15 @@ function App() {
               alt='svg linkedin logo'
             />
           </Link>
-          <Link>
+          <a
+            href='mailto:iago.viotti@gmail.com'
+          >
             <img
-              className='social-logo'
+              className='social-logo emailLogo'
               src={gmailLogo}
               alt='svg linkedin logo'
             />
-          </Link>
+          </a>
         </div>
       </main>
     </pageContext.Provider>

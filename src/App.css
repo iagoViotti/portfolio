@@ -1,3 +1,7 @@
+:root {
+  --graphite: #282a35;
+  --gold: #FFAF28;
+}
 
 body {
   padding: auto;
@@ -9,7 +13,7 @@ body {
 /****** MAIN SHIT ******/
 main {
   margin: 5ch;
-  border: 3px solid #282a35;
+  border: 3px solid var(--graphite);
   height: 90vmin;
   min-height: 595px;
   /* ????? */
@@ -24,8 +28,13 @@ main {
 }
 
 .social-logo {
-  height: 40px;
+  height: 35px;
   margin-left: 1vmin;
+}
+
+.emailLogo {
+  height: 40px;
+  transform: translateY(4px);
 }
 
 /****** HEADER SHIT ******/
@@ -49,21 +58,21 @@ main {
 }
 
 Header>h1 {
-  color: #282a35;
+  color: var(--graphite);
   font-size: 140px;
   margin: 0;
   padding: 0 20px 0 10px;
 }
 
 .header-link {
-  color: #282a35;
+  color: var(--graphite);
   display: flex;
   justify-content: flex-end;
   font-size: 20px;
   cursor: pointer;
   text-decoration: none;
   /* line-height: 30px; */
-  border-radius: 0 50px 50px 0;
+  border-radius: 0 0 0 0;
   padding: 0.5ch;
   padding-right: 2ch;
   padding-left: 4ch;
@@ -72,12 +81,15 @@ Header>h1 {
 
 /****** HOME SHIT ******/
 #infoWindow {
-  display: inline-block;
+  /* direction: rtl; */
+  display: flex;
+  /* justify-content: flex-end; */
   height: 50%;
   width: 45%;
   overflow-y: auto;
   position: relative;
   top: 18%;
+  /* padding-left: 2%; */
   margin-left: 4%;
   -webkit-mask-image: linear-gradient(transparent, black 10%, transparent 200%);
   mask-image: linear-gradient(transparent, black 10%, transparent 200%);
@@ -88,9 +100,9 @@ Header>h1 {
   width: 15px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #000000;
+  background: var(--graphite);
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(40, 42, 53, 0.8);
 }
