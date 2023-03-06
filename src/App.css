@@ -6,13 +6,26 @@ body {
   background-image: url('./img/gradient-background-test-3\ \(1\).jpg');
   background-size: cover;
 }
-
+/****** MAIN SHIT ******/
 main {
   margin: 5ch;
-  border: 1px solid #282a35;
+  border: 3px solid #282a35;
   height: 90vmin;
   min-height: 595px;
   /* ????? */
+}
+
+#social-icons {
+  position: relative;
+  text-align: right;
+  margin-right: 2vmin;
+  bottom: -8vmax;
+  /* transform: translatey(20vmin); */
+}
+
+.social-logo {
+  height: 40px;
+  margin-left: 1vmin;
 }
 
 /****** HEADER SHIT ******/
@@ -59,6 +72,7 @@ Header>h1 {
 
 /****** HOME SHIT ******/
 #infoWindow {
+  display: inline-block;
   height: 50%;
   width: 45%;
   overflow-y: auto;

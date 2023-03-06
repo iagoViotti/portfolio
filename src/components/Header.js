@@ -28,7 +28,7 @@ function Header() {
           Projects
         </Link>
         <Link
-          // to={}
+          to={'/contact'}
           id='contact-link'
           className='header-link'
           onClick={() => setPage('contact')}
